@@ -22,7 +22,7 @@
           DependsOnTargets="Init; SetupProjectsToPack">
 
     <DotNetPack NoBuild="True"
-                Output="$(PackagesDirectory)"
+                Output="$(NupkgsDirectory)"
                 ProjectPath="%(ProjectsToPack.Identity)/%(ProjectsToPack.ProjectName).csproj"
                 ToolPath="$(PreviousStageDirectory)"
                 VersionSuffix="$(VersionSuffix)"

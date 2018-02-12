@@ -43,7 +43,7 @@
                      Condition=" '$(PublishNativeInstallers)' == 'true' "/>
       <ForPublishing Include="%(GenerateArchivesInputsOutputs.Outputs)"
                      Condition=" '$(PublishArchives)' == 'true' "/>
-      <ForPublishing Include="$(PackagesDirectory)/Microsoft*.nupkg"
+      <ForPublishing Include="$(NupkgsDirectory)/Microsoft*.nupkg"
                      Condition=" '$(OS)' == 'Windows_NT' And '$(Architecture)' == 'x64' "/>
       <ForPublishing Include="$(PackagesDirectory)/VS.Redist.Common.Net.Core.SDK.$(Architecture).*.nupkg"
                      Condition=" '$(OS)' == 'Windows_NT' "/>

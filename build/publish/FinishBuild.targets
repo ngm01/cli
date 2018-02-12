@@ -33,7 +33,7 @@
                        Coherent="$(Coherent)" />
 
     <UpdateVersionsRepo BranchName="$(BranchName)"
-                        PackagesDirectory="$(PackagesDirectory)"
+                        PackagesDirectory="$(NupkgsDirectory)"
                         GitHubPassword="$(GITHUB_PASSWORD)"
                         Condition=" '$(GITHUB_PASSWORD)' != '' " />
   </Target>
